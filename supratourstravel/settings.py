@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-xhw6&)wq0q15e=cpi3ez3i#@3o838@9ih)4rpw-!)oa@6cnqtg
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['www.ahmederrami.com']
+ALLOWED_HOSTS = ['www.supratourstravel.com','preprod.supratourstravel.com']
 
 
 # Application definition
@@ -77,8 +77,16 @@ WSGI_APPLICATION = 'supratourstravel.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'errami$ST',
+        'USER': 'errami',
+        'PASSWORD': 'Travel@2023',
+        'HOST':'errami.mysql.pythonanywhere-services.com',
+        'PORT':'3306',
+        'OPTIONS': {
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
+        }
     }
 }
 
