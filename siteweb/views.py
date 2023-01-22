@@ -6,7 +6,7 @@ from .models import AppelOffre, Recrutement
 
 def aolistview(request):
 
-    aos = AppelOffre.objects.filter(date_archivage__gte=datetime.date.today())
+    aos = AppelOffre.objects.filter(date_archivage__gte=datetime.date.today()).filter(date_publication__lte=datetime.date.today())
 
     # Return in reverse chronologial order
     aos = aos.order_by("-date_limite_remise").all()

@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-xhw6&)wq0q15e=cpi3ez3i#@3o838@9ih)4rpw-!)oa@6cnqtg
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['www.supratourstravel.com','preprod.supratourstravel.com']
+ALLOWED_HOSTS = ['www.supratourstravel.com','test.supratourstravel.com']
 
 
 # Application definition
