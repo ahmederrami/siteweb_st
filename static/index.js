@@ -103,9 +103,3 @@ function generateTable(table, data) {
     }
   }
 }
-
-
-//const a=document.createElement("a");
-//a.setAttribute("href",window.location.hostname+"/html/html_quiz.asp");
-//a.innerHTML='lien';
-//document.body.appendChild(a);
