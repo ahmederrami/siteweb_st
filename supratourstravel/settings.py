@@ -139,5 +139,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # default static files settings for PythonAnywhere.
 # see https://help.pythonanywhere.com/pages/DjangoStaticFiles for more info
-MEDIA_ROOT = '/home/errami/supratourstravel/media'
+MEDIA_ROOT = '/home/errami/siteweb_st/media'
 MEDIA_URL = '/media/'
