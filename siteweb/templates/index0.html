@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+    <div id="message-view" style="margin:0px;">
+        {% include 'message.html' %}
+    </div>
+    <div id="presentation-view" style="margin:50px;">
+        <h1 style="text-align: center;">Présentation de Supratours Travel</h1>
+        {% include 'presentation.html' %}
+    </div>
+    <div id="gouvernance-view" style="margin:0px;">
+        <h1 style="text-align: center;">Gouvernance</h1>
+        {% include 'gouvernance.html' %}
+    </div>
+    <div id="references-view" style="margin:0px;">
+        <h1 style="text-align: center;">Références</h1>
+        {% include 'references.html' %}
+    </div>
+    <div id="recrutement-view" style="margin:0px;">
+        <h1 style="text-align: center;">Recrutement</h1>
+        <table id="recrutement-table" class="table table-hover"></table>
+    </div>
+    <div id="ao-view" style="margin:0px;">
+        <h1 style="text-align: center;">Appels d'Offres</h1>
+        <table id="ao-table" class="table table-hover"></table>
+    </div>
+    <div id="contact-view" class="container-fluid" style="margin:0px;">
+        <h1 style="text-align: center;">Contacts</h1>
+        {% include 'contacts.html' %}
+    </div>
+    <div id="video-view" class="video-container" style="width:100%;position: relative;">
+        <video style="width:100%;height:auto;" autoplay muted loop>
+          <source src="media/img/video_travel.mp4" type="video/mp4">
+          <source src="media/img/video_travel.ogg" type="video/ogg">
+          Your browser does not support the video tag.
+        </video>
+    </div>
+
+{% endblock %}

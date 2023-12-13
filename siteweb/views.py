@@ -1,4 +1,5 @@
 from django.http import JsonResponse
+#from django.contrib.auth.decorators import login_required
 import datetime
 from .models import AppelOffre, Recrutement
 
@@ -13,6 +14,7 @@ def aolistview(request):
     #return JsonResponse({"error": "Invalid mailbox."}, status=400)
     return JsonResponse([ao.serialize() for ao in aos], safe=False)
 
+#@login_required
 def recrutementlistview(request):
 
     recrutements = Recrutement.objects.all()#filter(date_archivage__lt=datetime.date.today)
